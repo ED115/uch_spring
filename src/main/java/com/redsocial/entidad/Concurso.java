@@ -15,10 +15,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "concurso")
+
 public class Concurso {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column (name= "idconcurso")
 	private long idConcurso;
 	
 	@Column(name = "nombre")
